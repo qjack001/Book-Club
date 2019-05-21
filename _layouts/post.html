@@ -1,0 +1,26 @@
+---
+layout: default
+---
+<a href="/index.html"><img id="logo" alt="Book Club" src="/assets/logo-red.png" draggable="false" style="transform: scale(0.7); top: 10px; left: 15px;"></a>
+
+<div class="front" style="
+width: calc(296px * 1.1);
+background-image: url(books/doet.jpeg);
+height: calc(445px * 1.1);
+
+left: 50%;
+top: 35px;
+-webkit-transform: translateX(-50%);
+transform: translateX(-50%);
+"></div>
+
+<h2 class="{{ page.prefix }}">{{ page.title }}</h2>
+<p class="byline">{{ page.by }}</p>
+
+{{ content }}
+
+{% include disqus.html %}
+
+<div class="spacer"></div>
+
+{% include footer.html %}
