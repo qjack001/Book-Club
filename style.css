@@ -82,7 +82,9 @@ h2.how-to::before
 
 .byline + p
 {
-    padding-top: 20px;
+    padding: 20px 5%;
+    padding-bottom: 40px;
+    text-align: justify;
 }
 
 #logo
@@ -294,7 +296,7 @@ footer a
 
 .comments
 {
-    width: 70%;
+    width: 90%;
     margin: 50px auto;
     max-width: 800px;
 }
@@ -322,12 +324,18 @@ footer a
     {
         font-size: 2.5rem;
         margin-top: 30px;
+        padding: 0 20px;
     }
     
     h2
     {
         font-size: 2.5rem;
-        padding: 0 40px;
+        padding: 0 20px;
+    }
+    
+    p
+    {
+        padding: 40px 20px;
     }
     
     .byline
