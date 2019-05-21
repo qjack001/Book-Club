@@ -1,7 +1,7 @@
 @font-face 
 {
     font-family: 'title';
-    src: url('./Fonts/webfont.otf') format('opentype');
+    src: url('https://guinane.xyz/Book-Club/fonts/webfont.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -200,7 +200,7 @@ h2.how-to::before
 
 .illustration
 {
-    background-image: url(./assets/illustration.png); 
+    background-image: url(https://guinane.xyz/Book-Club/assets/illustration.png); 
     width: 100vw; 
     height: 56vw; 
     background-size: contain;
