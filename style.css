@@ -292,6 +292,13 @@ footer a
     z-index: 1;
 }
 
+.comments
+{
+    width: 70%;
+    margin: 50px auto;
+    max-width: 800px;
+}
+
 @media screen and (max-width:815px)
 {
     #logo
