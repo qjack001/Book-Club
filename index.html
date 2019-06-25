@@ -105,6 +105,53 @@ height: calc(445px * 1.1);
             position: relative;
         }
     </style>
+
+    
+    <a href="https://guinane.xyz/Book-Club/fry/" id="fry" class="spine" onclick="run('fry'); return false;">
+        <link rel="preload" href="https://guinane.xyz/Book-Club/books/fry-spine.jpeg" as="image">
+
+        <img id="fry-spine" src="https://guinane.xyz/Book-Club/books/fry-spine.jpeg" width=50>
+    </a>
+
+    <div class="wrap" style="transform: translate(-6px,-22px);">
+        <div class="prism" id="fry-prism">
+            <div class="front" style="
+width: calc(296px * 1.1);
+background-image: url(https://guinane.xyz/Book-Club/books/fry.jpeg);
+height: calc(445px * 1.1);
+            "></div>
+            <div class="left" style="
+width: calc(50px * 1.1);
+-webkit-transform: rotateY(270deg) translateX(-50px);
+transform: rotateY(270deg) translateX(-50px);
+background-image: url(https://guinane.xyz/Book-Club/books/fry-spine.jpeg);
+height: calc(445px * 1.1);
+            "></div>
+        </div>
+    </div>
+
+    <style>
+        #fry-prism
+        {
+            -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+            -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+            opacity: 0;
+        }
+
+        #fry-prism.revealed 
+        {   
+            opacity: 1;
+            -webkit-transform: rotateY(0deg) translate(calc(50vw - 270px), calc(-100vh + 605px));
+            transform: rotateY(0deg) translate(calc(50vw - 270px), calc(-100vh + 605px));
+            
+            -webkit-animation: spin 1.5s ease;
+            animation: spin 1.5s ease;
+            z-index: 99;
+            position: relative;
+        }
+    </style>
 </div>
 
 {% include footer.html %}
